@@ -1,0 +1,90 @@
+<!DOCTYPE HTML><html lang="zh-cn"><head><meta charset='utf-8'><title>和合本网络圣经</title><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="keywords" content="和合本网络圣经"><meta name="description" content="和合本网络圣经"><link rel="stylesheet" type="text/css" href="static/css/a.css"></head><body><!--[if lt IE 8]><div class="yie"><div class="wd"><h1>请更新你的Web浏览器</h1><p>要得到我们网站上的最佳体验，我们建议您升级到Internet Explorer的最新版本或选择其他网页浏览器，下面是最流行的Web浏览器的列表。</p><div><a href="https://www.google.com/chrome/" target="_blank">Chrome</a><a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a><a href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie/" target="_blank" class="ie">Internet Explorer 9</a><a href="http://www.apple.com/safari/download/" target="_blank">Safari</a><a href="http://www.opera.com/download/" target="_blank">Opera</a></div></div></div><![endif]--><div id="lay"></div><input type='hidden' name='csrfmiddlewaretoken' value='mkCa496yw291f9gTRem8ubW6ByVy1tla'><textarea name="tpl" style="display:none;"><% template index %><div id="hd"><%:main.header%></div><div id="bd" class="ysb{{=rt.showb2}}{{rt.hideleft}} yso{{/rt.hideleft}}"><div id="side"><%:main.topicverse%><div class="gtm"><div style="width:190px;height:380px;overflow:hidden;"><a href="http://www.chineseprotestantchurch.org.cn/onlinesky" target="_blank" style="display:block;width:190px;height:380px;"><img src="http://www.chineseprotestantchurch.org.cn/uploads/images/20190104/82a606792d5aed5c79798b3459fd4d7d.jpeg" WIDTH=190 HEIGHT=310 ></a>
+<p></div></div></div><div id="main"><div class="yu"><%:main.content%></div><div class="yu" i='2'>{{!rt.showin2}}<%:main.content%>{{/!rt.showin2}}{{rt.showin2==1}}<%:main.search%>{{/rt.showin2}}</div></div></div><%/template %><% template header %><div class="mod" id="hede"><div class="hd"><em class="us"></em><img class="ld" src="/static/css/ld.gif"/><span class="er">加载数据失败</span><div class="rd"><a href="http://www.chineseprotestantchurch.org.cn/bibleapp" target="_blank">圣经时光 APP下载 </a></div><form action="/i18n/setlang/" method="post"><a href="zh-tw">繁</a> | <span>简</span> | <a href="en">EN</a></form></div><div class="bd gio"><div class="lg"><!--注意Logo最好控制在161x40左右,不要偏離太多.-->
+<img src="
+http://bible.chineseprotestantchurch.org.cn/media/OnlineBible_logo_161x40.png
+" width=161 height=40>
+
+<!--系統有一個沒有紅色十字 icon "http://bible.chineseprotestantchurch.org.cn/media/OnlineBible_logo_161x40.png" --></div><form><em class="so{{rt.hideleft}}1{{/rt.hideleft}}" title="显示或者隐藏左侧"></em> <em class="sl{{=rt.lstype}}" title="段落或列表"></em> <em class="ab{{=rt.showb2}}" t="main.nextwindow" title="切换窗口"></em> <em class="aa" t="main.setfont" title="字体大小"></em> <em class="sc{{rt.sync2}}2{{/rt.sync2}}" title="同步到另一侧"></em> <input name="q" type="text" placeholder="关键字" pt="top" lab="关键字"/> <input type="submit" value="搜索"><input name="language" type="hidden"/></form><div class="hh"><!--注意Logo最好控制在126x45及4px左右,不要偏離太多.-->
+<a href="http://www.chineseprotestantchurch.org.cn/" target="_blank">
+<img style="margin-top: 3px;" src="
+http://bible.chineseprotestantchurch.org.cn/media/CccTspm_logo_simple_1.png
+" width=126 height=40 ></a></div></div></div><%/template %><% template topicverse %><div class="mod" id="tove"><h2 t="main.topiclist">主题经文：<span>{{=ms.topickey}}</span></h2><div class="vt"><div class="at" style="font-size:{{=rt.fontsize}}%"><ul>{{@ms.topicval}}<li>{{=_val}}</li>{{/@ms.topicval}}</ul></div></div></div><%/template %><% template topiclist %><div class="mod" id="toli"><ul>{{@ms.topicli}}<li{{ms.topickey==_val}} class="on"{{/ms.topickey}}>{{=_val}}</li>{{/@ms.topicli}}</ul></div><%/template %><% template adpart %><div class="mod" id="adpt"><a href="http://www.hkbs.org.hk/tw/content/130-i-love-the-bible-app" target="_blank"><img src="{{=ms.imgpath}}ilovebible.jpg"/></a></div><%/template %><% template content %><div class="mod" id="cote"><div class="hd"><em class="sel b" t="main.menub"></em> <em class="sel r" t="main.menur"></em> <em class="ic au" t="main.audio"></em> <em class="ic ch" title="交换经文"></em><div class="fr"><em class="ic ba dis" title="后退"></em> <em class="ic fo dis" title="前进"></em> <em class="ic pr" title="上一章"></em> <em class="ic nx" title="下一章"></em></div></div><div class="bd"><div class="gbt" style="font-size:{{=rt.fontsize}}%"></div></div><div class="ft"><div class="nt"><em class="cx" title="关闭">X</em></div></div></div><%/template %><% template audiopad %><div class="mod" id="audi" ai="{{=index}}"><audio><source src="{{=audiosrc}}"></audio></div><%/template %><% template audiojs %><em class="playlang" t="main.audio">{{=playlang}}</em><div class="play-pause"><p class="play"></p><p class="pause"></p><p class="loading"></p><p class="error"></p></div><div class="scrubber"><div class="progress"></div><div class="loaded"></div></div><div class="grp" t="main.repeat"></div><div class="time"><em class="played">00:00</em>/<strong class="duration">00:00</strong></div><div class="error-message"></div><em class="close" title="关闭">X</em><%/template %><% template repeat %><div class="mod grp" id="rept"><ul>{{@rptype}}<li i="{{=_key}}"><em class="r{{=_key}}"></em>{{=_val}}</li>{{/@rptype}}</ul></div><%/template %><% template audio %><div class="mod" id="audo"><h3>聆听</h3><ul>{{@media}}<li i="{{=_key}}">{{=_val.0}}</li>{{/@media}}</ul></div><%/template %><% template menub %><div class="mod" id="bbt"{{id}} i="{{=id}}"{{/id}}><dl>{{@blist}}<dd{{_val.2}} class="on"{{/_val.2}} i="{{=_val.0}}">{{=_val.1}}</dd>{{/@blist}}</dl></div><%/template %><% template menur %><div class="mod fix" id="brl"{{id}} i="{{=id}}"{{/id}}>{{about}}<p t="ves">关于 {{=bible}}</p>{{/about}}<div class="a"><h3>旧约圣经</h3><div class="ct"><ul>{{@oldlist}}<li{{_val.2}} class="on"{{/_val.2}} i="{{=_val.0}}">{{=_val.1}}</li>{{/@oldlist}}</ul></div></div><div><h3>新约圣经</h3><div class="ct"><ul>{{@newlist}}<li{{_val.2}} class="on"{{/_val.2}} i="{{=_val.0}}">{{=_val.1}}</li>{{/@newlist}}</ul></div></div><div class="ve"><h3>章</h3><div class="vt"><ul class="fix"></ul></div></div></div><%/template %><% template setfont %><div class="mod" id="sefo"><div class="fix"><div class="glb"><em t="-">-</em><span>{{=rt.fontsize}}%</span><em t="+">+</em></div></div></div><%/template %><% template nextwindow %><div class="mod gio" id="nxwd"><em class="ab0" ></em> <em class="ab1" ></em> <em class="ab2" ></em></div><%/template %><% template search %><div class="mod" id="serh"><em class="cs" title="关闭">X</em><div class="hd"></div><div class="bd"><div class="gbt" style="font-size:{{=rt.fontsize}}%"></div></div></div><%/template %><% template about %><div id="cpy" class="mod"><div class="av">{{=content}}</div></div><%/template %><% template nst %><div class="mod" id="nst"></div><%/template %><% template gmsg %><div id="gmsg" class="mod"><div class="hd"></div><div class="bd" title="点击关闭"></div><div class="ft"></div></div><%/template %></textarea><textarea name="topic" style="display:none;">RCUV|祈祷|信心|信实|信靠|诚实|盼望|应许|惧怕|爱心|接待|福气|平安|喜乐|悔罪|认罪|懒惰|贪婪|满足|嫉妒|安慰|休息|愤怒|宽恕|忍耐|魔鬼|世界|骄傲|家庭|婚姻|金钱|公义|试探|行善|作领导|善用恩赐|传褔音|朋友|年老|言语|神的话语|生命的竞赛|圣诞节|受苦节|复活节
+安慰
+[诗23:4]我虽然行过死荫的幽谷，也不怕遭害，因为你与我同在；你的杖，你的竿，都安慰我。
+[诗47:1-3]上帝是我们的避难所，是我们的力量，是我们在患难中随时的帮助。
+[诗22:24]因为他没有藐视憎恶受苦的人，也没有转脸不顾他们；那受苦之人呼求的时候，他就垂听。
+[诗27:14]要等候耶和华，当壮胆，坚固你的心，要等候耶和华！ 
+[诗18:2]耶和华是我的岩石、我的山寨、我的救主、我的上帝、我的盘石、我所投靠的。他是我的盾牌，是拯救我的角，是我的碉堡。
+[诗10:14]你已经察看，顾念人的忧患和愁苦，放在你的手中。无倚无靠的人把自己交托给你，你向来是帮助孤儿的。
+[诗55:22]你要把你的重担卸给耶和华，他必扶持你，他永不叫义人动摇。
+[诗37:39]义人得救是出于耶和华，在患难时耶和华作他们的避难所。
+[赛40:1]你们的上帝说:你们要安慰，安慰我的百姓。
+[赛40:29]疲乏的，他赐能力；软弱的，他加力量。
+[赛40:31]但那等候耶和华的必重新得力。他们必如鹰展翅上腾；他们奔跑却不困倦，行走却不疲乏。
+[哀3:31-33]因为主必不永远丢弃人。主虽使人忧愁，还要照他诸般的慈爱发怜悯。因他并不甘心使人受苦，使人忧愁。
+[太11:28]凡劳苦担重担的人都到我这里来，我要使你们得安息。
+[约16:33]我对你们说了这些事，是要使你们在我里面有平安。在世上你们有苦难，但你们要有勇气，我已经胜过世界。
+[约16:33]我对你们说了这些事，是要使你们在我里面有平安。在世上你们有苦难，但你们要有勇气，我已经胜过世界。
+[约14:18]我不会撇下你们为孤儿，我必到你们这里来。
+[腓4:7]上帝所赐那超越人所能了解的平安，必在基督耶稣里，保守你们的心怀意念。
+[林前10:13]上帝是信实的，他不会让你们遭受无法承受的考验，在受考验的时候，总会给你们开一条出路，让你们能忍受得了。
+[林前15:58]我亲爱的弟兄们，你们务要坚固，不可动摇，常常竭力多做主工，因为你们知道，你们在主里的劳苦不是徒然的。
+[彼前5:10]那赐一切恩典的上帝曾在基督里召了你们，得享他永远的荣耀，在你们暂受苦难之后，必要亲自成全你们，坚固你们，赐力量给你们。
+[启21:4]上帝要擦去他们一切的眼泪；不再有死亡，也不再有悲哀、哭号、痛苦，因为先前的事都过去了。
+[太11:28]凡劳苦担重担的人都到我这里来，我要使你们得安息。
+[约16:33]我对你们说了这些事，是要使你们在我里面有平安。在世上你们有苦难，但你们要有勇气，我已经胜过世界。
+[诗23:4]我虽然行过死荫的幽谷，也不怕遭害，因为你与我同在；你的杖，你的竿，都安慰我。
+[林前15:58]我亲爱的弟兄们，你们务要坚固，不可动摇，常常竭力多做主工，因为你们知道，你们在主里的劳苦不是徒然的。
+[诗47:1-3]上帝是我们的避难所，是我们的力量，是我们在患难中随时的帮助。
+[诗22:24]因为他没有藐视憎恶受苦的人，也没有转脸不顾他们；那受苦之人呼求的时候，他就垂听。
+[诗27:14]要等候耶和华，当壮胆，坚固你的心，要等候耶和华！ </textarea><script>window.biblelist=[["RCUV", "\u548c\u5408\u672c\u4fee\u8ba2\u7248(\u548c\u5408\u672c2010)"], ["CUNP", "\u65b0\u6807\u70b9\u548c\u5408\u672c"]];</script><script>window.jsln={'%(0)s has been filled words, at least %(1)s characters':'\u5df2\u586b\u5199%(0)s\u4e2a\u5b57\uff0c\u81f3\u5c11\u8981%(1)s\u4e2a\u5b57',
+'%(0)s has been filled words, must between [%(1)s, %(2)s] words in':'\u5df2\u586b\u5199%(0)s\u4e2a\u5b57\uff0c\u5fc5\u987b\u5728[%(1)s, %(2)s]\u4e2a\u5b57\u4e4b\u95f4',
+'%(0)s has been filled words, words up to %(2)s':'\u5df2\u586b\u5199%(0)s\u4e2a\u5b57\uff0c\u6700\u591a%(2)s\u4e2a\u5b57',
+'%(0)s item has been selected, you must select [%(1)s, %(2)s] items':'\u5df2\u9009\u62e9%(0)s\u9879\uff0c\u5fc5\u987b\u9009\u62e9[%(1)s, %(2)s]\u9879',
+'A two-byte characters, %(0)s has been filled bytes, at least one byte of %(1)s':'\u4e00\u4e2a\u6c49\u5b57\u4e24\u5b57\u8282\uff0c\u5df2\u586b\u5199%(0)s\u4e2a\u5b57\u8282\uff0c\u81f3\u5c11\u8981%(1)s\u4e2a\u5b57\u8282',
+'A two-byte characters, have filled %(0)s bytes must be [%(1)s, %(2)s] bytes between':'\u4e00\u4e2a\u6c49\u5b57\u4e24\u5b57\u8282\uff0c\u5df2\u586b\u5199%(0)s\u4e2a\u5b57\u8282\uff0c\u5fc5\u987b\u5728[%(1)s, %(2)s]\u4e2a\u5b57\u8282\u4e4b\u95f4',
+'A two-byte characters, have filled %(0)s bytes, up to %(2)s bytes':'\u4e00\u4e2a\u6c49\u5b57\u4e24\u5b57\u8282\uff0c\u5df2\u586b\u5199%(0)s\u4e2a\u5b57\u8282\uff0c\u6700\u591a%(2)s\u4e2a\u5b57\u8282',
+'Are you sure':'\u786e\u8ba4\u5417\uff1f',
+'Can not be empty':'\u4e0d\u80fd\u4e3a\u7a7a',
+'Cancel':'\u53d6\u6d88',
+'Close':'\u5173\u95ed',
+'Dialog':'\u5bf9\u8bdd\u6846',
+'Failed to load, click reload':'\u52a0\u8f7d\u5931\u8d25\uff0c\u70b9\u51fb\u91cd\u65b0\u52a0\u8f7d',
+'Fill two inconsistent':'\u4e24\u6b21\u586b\u5199\u4e0d\u4e00\u81f4',
+'Has selected %(0)s items to select at least %(1)s items':'\u5df2\u9009\u62e9%(0)s\u9879\uff0c\u81f3\u5c11\u8981\u9009\u62e9%(1)s\u9879',
+'Has selected %(0)s items, select up to %(2)s items':'\u5df2\u9009\u62e9%(0)s\u9879\uff0c\u6700\u591a\u9009\u62e9%(2)s\u9879',
+'Illegal':'\u4e0d\u5408\u6cd5',
+'Including unsafe characters':'\u5305\u62ec\u4e0d\u5b89\u5168\u5b57\u7b26',
+'Load error, perhaps the audio is lost.':'\u52a0\u8f7d\u9519\u8bef\uff0c\u53ef\u80fd\u8bed\u97f3\u6682\u65f6\u4e0d\u53ef\u7528\u3002',
+'Load more...':'\u52a0\u8f7d\u66f4\u591a...',
+'Missing <a href="http://get.adobe.com/flashplayer/">flash player</a> plugin.':'\u6ca1\u6709\u627e\u5230<a href="http://get.adobe.com/flashplayer/">flash\u64ad\u653e\u5668</a>\u63d2\u4ef6',
+'Must be Chinese':'\u5fc5\u987b\u662f\u4e2d\u6587',
+'Must be a currency type, two decimal places':'\u5fc5\u987b\u662f\u8d27\u5e01\u7c7b\u578b\uff0c\u4e24\u4f4d\u5c0f\u6570',
+'Must be a number':'\u5fc5\u987b\u662f\u6570\u5b57',
+'Must be a real number':'\u5fc5\u987b\u662f\u5b9e\u6570',
+'Must be an integer greater than zero':'\u5fc5\u987b\u662f\u5927\u4e8e\u96f6\u6574\u6570',
+'Must be an integer':'\u5fc5\u987b\u662f\u6574\u6570',
+'Must be greater than 0 Currency':'\u5fc5\u987b\u662f\u5927\u4e8e0\u7684\u8d27\u5e01\u7c7b\u578b',
+'Must be greater than zero':'\u5fc5\u987b\u5927\u4e8e\u96f6',
+'Must be in English':'\u5fc5\u987b\u662f\u82f1\u6587',
+'Must be in the [%(1)s, %(2)s] range':'\u5fc5\u987b\u5728[%(1)s, %(2)s]\u8303\u56f4',
+'Must be non-negative integers':'\u5fc5\u987b\u662f\u975e\u8d1f\u6574\u6570',
+'No save':'\u4e0d\u4fdd\u5b58',
+'Not be greater than %(2)s':'\u4e0d\u80fd\u5927\u4e8e%(2)s',
+'Not be less than %(1)s':'\u4e0d\u80fd\u5c0f\u4e8e%(1)s',
+'Play bible':'\u64ad\u653e\u5168\u90e8',
+'Play book':'\u64ad\u653e\u4e00\u5377',
+'Play one':'\u64ad\u653e\u4e00\u7ae0',
+'Please enter search keyword in the above and click search.':'\u8bf7\u5728\u4e0a\u65b9\u8f93\u5165\u641c\u7d22\u5173\u952e\u5b57\uff0c\u70b9\u51fb\u641c\u7d22\u3002',
+'Repeat bible':'\u5faa\u73af\u5168\u90e8',
+'Repeat book':'\u5faa\u73af\u4e00\u5377',
+'Repeat one':'\u5faa\u73af\u4e00\u7ae0',
+'Save':'\u4fdd\u5b58',
+'Summary':'\u7b80\u4ecb',
+'Sure':'\u786e\u5b9a',
+'System message':'\u7a0b\u5e8f\u5185\u90e8\u9519\u8bef',
+'Too large, must be in [%(1)s, %(2)s] range':'\u8fc7\u5927\uff0c\u5fc5\u987b\u5728[%(1)s, %(2)s]\u8303\u56f4',
+'Too small, must be [%(1)s %(2)s] range':'\u8fc7\u5c0f\uff0c\u5fc5\u987b\u5728[%(1)s, %(2)s]\u8303\u56f4',
+'Unknow error':'\u672a\u77e5\u9519\u8bef',
+'You choose the version of the Bible does not exist or is not in the current locale, automatically go to "%s"':'\u4f60\u9009\u62e9\u7684\u5723\u7ecf\u7248\u672c\u4e0d\u5b58\u5728\u6216\u4e0d\u5728\u5f53\u524d\u7684\u8bed\u8a00\u73af\u5883\u4e2d\uff0c\u81ea\u52a8\u8f6c\u6362\u5230 "%s"',
+};function gettext(msgid){var value = window.jsln[msgid];if (typeof(value) == 'undefined') {return msgid;} else {return (typeof(value) == 'string') ? value : value[0];}}function interpolate(fmt, obj, named) {if (named) {return fmt.replace(/%\(\w+\)s/g, function(match){return String(obj[match.slice(2,-2)])});} else {return fmt.replace(/%s/g, function(match){return String(obj.shift())});}}</script><script src="static/js/jquery-1.10.2.js"></script><script type="text/javascript" src="static/js/a.js"></script></body></html>

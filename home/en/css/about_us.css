@@ -1,0 +1,139 @@
+.yd-main{
+	/*justify-content: flex-start;*/
+	display: block;
+}
+.yd-US_center{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.yd-US_center h3{
+	font-size: 24px;
+	color: #333;
+	font-weight: 400;
+}
+.US_left_con{
+	width: 600px;
+	float: left;
+	overflow: hidden;
+}
+.US_left_con ul{
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.US_left_con ul li{
+	float: left;
+	width: 600px;
+	height: auto;
+	overflow: hidden;
+}
+.US_left_con ul li div{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	font-size: 13px;
+	color: #999;
+	text-align: right;
+}
+.US_left_con ul li span{
+	display: block;
+	width: 300px;
+	float: left;
+	height: auto;
+	line-height: 30px;
+	font-size: 13px;
+	color: #999;
+}
+.US_left_con ul li .about_big_state{
+	width: 520px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	/*overflow: hidden;*/
+}
+.US_right_con{
+	width: 600px;
+	float: right;
+	overflow: hidden;
+}
+.US_right_con img{
+	width: 500px;
+	height: 267px;
+	float: right;
+}
+/*底部*/
+.US_bottom_con{
+	width: 1200px;
+	height: auto;
+	overflow: hidden;
+	padding-top: 80px;
+}
+.US_bottom_con ul{
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.US_bottom_con ul li{
+	display: block;
+	overflow: hidden;
+	float: left;
+	margin-bottom: 40px;
+}
+.US_li_maright{
+	margin-right: 14px;
+}
+.US_bottom_con ul li div{
+	width: 89px;
+	height: 44px;
+	float: left;
+	display: block;
+	overflow: hidden;
+	line-height: 44px;
+	font-size: 16px;
+	color: #666;
+	text-align: center;
+}
+.US_bottom_con ul li input{
+	width: 300px;
+	height: 42px;
+	border: #e6e6e6 1px solid;
+	outline: none;
+	float: left;
+	overflow: hidden;
+	font-size: 16px;
+	color: #666;
+	background: #fcfcfc;
+	text-indent: 10px;
+}
+.US_bottom_con ul li textarea{
+	float: left;
+	width: 1110px;
+	height: 118px;
+	resize: none;
+	background: #fcfcfc;
+	border: #e6e6e6 1px solid;
+	outline: none;
+	padding: 10px;
+	font-size: 16px;
+	color: #666;
+}
+.US_bottom_con ul li textarea:focus{
+    border: 1px solid #1081d9;
+}
+.US_bottom_con ul li a{
+	float: right;
+	width: 200px;
+	height: 44px;
+	background: #1081d9;
+	text-align: center;
+	line-height: 44px;
+	font-size: 16px;
+	color: #fff;
+	
+}
+.yd-captcha-div{
+	width: 45%!important;
+	height: 100%!important;
+}

@@ -1,0 +1,539 @@
+.yd-bible-ebook{
+    background: #f8f8f8;
+    overflow: hidden;
+    padding-bottom: 94px;
+}
+.yd-bible-ebook>div{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 70px 0 90px 0;
+}
+.yd-ebook-cover{
+    width: 200px;
+    height: 295px;
+    margin-left: 75px;
+    float: left;
+    margin-right: 110px;
+}
+.yd-ebook-name{
+    font-size: 28px;
+    color: #333333;
+    line-height: 26px;
+}
+.yd-ebook-info{
+    font-size: 14px;
+    color: #999999;
+    width: 700px;
+    float: left;
+
+    position: relative;
+}
+.yd-ebook-info>div:nth-child(2){
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.yd-ebook-data{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    overflow: hidden;
+    border-top:1px solid #e8e8e8;
+}
+.yd-ebook-load{
+    display: flex;
+    align-items: center;
+    color: #1081d9;
+}
+.yd-ebook-load>div{
+    display: inline-block;
+}
+.yd-ebook-data>div{
+    margin-bottom: 35px;
+    /*width:50%;*/
+    float: left;
+    margin-right: 10px;
+}
+.yd-ebook-data>div:nth-child(2n+1){
+     width: 260px;
+    margin-right: 0;
+ }
+ .yd-ebook-data>div>span:last-child{
+     color: #333333;
+     margin-left:35px;
+ }
+ .yd-ebook-download{
+     width: 150px;
+     height: 40px;
+     text-align: center;
+     line-height: 40px;
+     background: #1081d9;
+     color: #ffffff;
+     font-size: 16px;
+     margin-right: 30px;
+     border-radius: 50px;
+     display: inline-block;
+ }
+.yd-basic-info{
+    width: 1200px;
+    margin: 0 auto;
+}
+.yd-basic-title{
+    display: flex;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 26px;
+    border-bottom: 1px solid #e8e8e8;
+ }
+.yd-basic-title .yd-title{
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.yd-ebook-item{
+    padding-left: 10px;
+    width: 1030px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #888888;
+}
+.yd-ebook-item>div:first-child{
+    font-size: 16px;
+    color: #333333;
+    line-height: 32px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.yd-bible-scan{
+    height: 465px;
+    background: url("../image/scan.png") no-repeat;
+}
+.yd-bible-scan>div{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    padding-top: 91px;
+}
+.yd-bible-scan>div>div:first-child{
+    font-size: 24px;
+    line-height: 26px;
+    color: #ffffff;
+    margin-bottom:40px;
+}
+.yd-bible-scan>div>div:nth-child(2){
+    width: 165px;
+    height: 165px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+.yd-bible-scan>div>div:last-child{
+    font-size: 14px;
+    color: rgba(250,250,250,.5);
+}
+.yd-local{
+    width: 100%;
+}
+.yd-main{
+    flex-wrap: wrap;
+}
+.yd-ministry{
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.yd-ministry>div{
+    float: left;
+}
+.yd-ministry-img{
+    width: 590px;
+    height: 430px;
+    overflow: hidden;
+}
+.yd-ministry-text{
+    height: 430px;
+    width: 610px;
+    box-sizing: border-box;
+    border: 1px solid #f0f0f0;
+    background: #fafafa;
+    padding-top: 35px;
+    padding-left: 65px;
+}
+.yd-ministry-text>div:first-child{
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.yd-ministry-text a{
+    width: 200px;
+    height: 40px;
+    background: #ff4040;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom:20px;
+    display: block;
+}
+.yd-has-donate>span:last-child{
+    font-size: 16px;
+    color: #999999;
+}
+.yd-has-donate>span:first-child{
+    font-size: 24px;
+    color: #333333;
+}
+.yd-has-donate>span:nth-child(2){
+    font-size: 40px;
+    color: #333333;
+    margin-right: 20px;
+}
+/*.yd-ministry-text>div:last-child{
+    font-size: 14px;
+    color: #999999;
+}*/
+.yd-aim{
+    width: 360px;
+    height: 10px;
+    border-radius: 50px;
+    background: #eeeeee;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.yd-current{
+    height: 100%;
+    background: #1081d9;
+}
+.yd-aim-data{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+.yd-aim-data>div:first-child{
+    font-size: 12px;
+    color: #999999;
+    display: flex;
+    align-items: flex-start;
+    float: left;
+}
+.yd-aim-data>div:last-child{
+    float: right;
+}
+.yd-aim-data>div>span{
+    font-size: 16px ;
+    color: #333333;
+    margin-left: 10px;
+}
+
+.yd-aim-data{
+    font-size: 14px;
+    color: #333333;
+}
+.yd-main-title,.yd-note-title{
+    display: flex;
+    border-bottom: 1px solid #f0f0f0;
+}
+.yd-note-title{
+    width: 330px;
+}
+.yd-note-con{
+    background: #fafafa;
+    padding: 25px 20px 0;
+}
+.yd-ministry-con{
+    padding-top: 35px;
+}
+.yd-ministry-con>div{
+    width: 790px;
+}
+.yd-ministry-item{
+    margin-bottom: 45px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 30px;
+}
+.yd-ministry-item>div:first-child{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+}
+.yd-ministry-item>div:last-child{
+    text-indent: 2em;
+}
+.yd-ministry-pic img{
+    width: 100%;
+    margin-top: 10px;
+}
+.yd-note-con .yd-note-textarea{
+    width: 100%;
+    height: 85px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    font-size: 14px;
+    resize: none;
+    padding-top: 10px;
+    outline: none;
+    border: 1px solid    #e6e6e6;
+    border-radius: 5px;
+}
+.yd-note-con .yd-note-textarea:focus{
+    border: 1px solid #1081d9;
+}
+.yd-note-con .yd-note-textarea::-webkit-input-placeholder{
+        color:#d6d6d6;
+        font-size: 14px
+}
+
+.yd-note-info{
+    display: flex;
+    justify-content: space-between;
+    line-height: 55px;
+    font-size: 14px;
+    color: #666666;
+    align-items: center;
+}
+.yd-note-count{
+    color: #1081d9;
+}
+.yd-note-info .yd-msg-submit{
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    background: #1081d9;
+    border-radius: 2px;
+}
+.yd-captcha-div{
+    position:relative;
+}
+.yd-note-con .yd-captcha{
+    width: 50%;
+    box-sizing: border-box;
+    resize: none;
+    padding: 8px 0;
+    padding-left: 15px;
+    outline: none;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+}
+.yd-note-con .yd-captcha::-webkit-input-placeholder{
+        color:#d6d6d6;
+        font-size: 14px
+}
+
+.yd-captcha-img{
+    height: 100%;
+    width: 36%;
+    position: absolute;
+    right: 0px;
+}
+.yd-note-item{
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 2px dotted #e6e6e6;
+    width: 100%;
+    overflow: hidden;
+}
+.yd-note-item>div{
+    float: left;
+}
+.yd-note-data{
+    width: 225px;
+}
+.yd-note-data>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    line-height: 42px;
+    font-size: 13px;
+    color: #999;
+}
+
+.yd-note-data>div:first-child>div:first-child{
+    font-size: 16px;
+    color: #333333;
+    display: inline-block;
+}
+.yd-note-data>div:first-child>div:last-child{
+    float: right;
+}
+.yd-note-data>div:last-child{
+    font-size: 13px;
+    line-height: 27px;
+    color: #999999;
+}
+.yd-note-avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.yd-note-more{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+}
+.yd-ministry-event{
+    display: flex;
+    width: 820px;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.yd-event-img{
+    width: 290px;
+    flex-shrink: 0;
+    height: 165px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.yd-event-img img{
+    width: 290px;
+}
+.yd-li-status{
+    height: 25px;
+    border-radius: 50px;
+    color: #ffffff;
+    background: #1081d9;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 13px;
+    padding: 0 10px;
+}
+.yd-main-ad{
+    margin-bottom: 30px;
+}
+.yd-event-con{
+    width: 445px;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+}
+.yd-event-con>div:first-child{line-height:26px;margin-bottom:10px}
+.yd-event-con .yd-event-title{font-size:20px;color:#333333;line-height:26px;}
+
+.yd-event-con>div:nth-child(2){
+    font-size: 12px;
+    color: #999999;
+    line-height: 22px;
+    height: 88px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:4;
+    overflow: hidden;
+
+}
+.yd-event-data{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.yd-event-data>div{
+    float: left;
+}
+.yd-after{
+    height: 15px;
+    width: 1px;
+    color: #e6e6e6;
+    background: #e6e6e6;
+    display: inline-block;
+    margin: 0 25px;
+}
+.yd-event-data>div>div:last-child{
+    font-size: 12px;
+    color: #999999;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.yd-event-data>div>div:first-child{
+    font-size: 16px;
+    color: #333333;
+    line-height: 24px;
+}
+.yd-event-con>div:nth-last-child(2){
+    font-size: 13px;
+    color: #999999;
+}
+.yd-event-con .yd-event-button{position:absolute;width:100px;height:35px;line-height:35px;text-align:center;color:#ffffff;background:#ff4040;right:0;bottom:0}
+.yd-event-con .yd-event-button:hover{color:white!important}
+
+.yd-ministry-list>div:last-child{
+    border-bottom: 0;
+}
+.yd-dynamic{
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    background: #fafafa;
+    padding-bottom: 25px;
+}
+.yd-dynamic-item{
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 30px;
+    color: #999;
+    font-size: 13px;
+}
+.yd-dynamic-item>div{
+    float: left;
+}
+.yd-dynamic-item>div:first-child{
+    font-size: 13px;
+    color: #101010;
+    width: 95px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.yd-dynamic-item>div:nth-child(2){
+    width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.yd-video-data{
+    display: flex;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 30px;
+}
+.yd-video-data>div{
+    display: inline-block;
+}
+.yd-video-data i{
+    margin-right: 5px;
+}
+.yd-video-data .yd-after{
+    margin: 0 20px;
+}
+
+
+/*0722*/
+.yd-ministry-text div.serDaodu p{margin-top: 20px;font-size: 17px;color: #666;line-height: 1.8;}
+
+
+
+
+
+
+

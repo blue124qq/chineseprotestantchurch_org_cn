@@ -1,0 +1,49 @@
+#allmap{width:100%;height:790px;top:0;z-index:0}
+.yd-map{position:relative;height:790px}
+.yd-map-search{width:1200px;position:relative;margin:0 auto;z-index:1000;top:-770px}
+.yd-map-item{background:#ffffff;width:335px;overflow:hidden;overflow-y:auto;height:700px}
+.yd-map-nav{height:55px;display:flex;justify-content:space-between;padding:0 40px;box-sizing:border-box;font-size:14px;line-height:55px;border-bottom:1px solid #eeeeee}
+.yd-map-nav>a{cursor:pointer;height:50px;line-height:50px;display:inline-block}
+.yd-map-nav>a:nth-child(2){margin:0 25px}
+.yd-map-act{color:#1081d9;font-weight:bold;border-bottom:1px solid #1081d9}
+.yd-church-list{height:110px;display:flex;flex-direction:column;justify-content:center;border-bottom:1px solid #eeeeee;padding-top:0px;box-sizing:border-box;overflow:hidden}
+.yd-map-con{padding-left:30px}
+.yd-map-input{margin:15px 0}
+.yd-map-input{height:40px;width:288px;border:1px solid #eeeeee;box-sizing:border-box;overflow:hidden}
+.yd-map-input div{width:50px;border-left:1px solid #eeeeee;background:#fafafa;height:40px;line-height:50px;text-align:center;float:right}
+.yd-map-input input{width:210px;line-height:37px;padding-left:20px;height:37px;box-sizing:border-box;margin:0;position:relative;top:1px;border:none;float:left;outline:none}
+.yd-map-select{height:35px;width:auto;background:#fafafa;color:#333333;line-height:35px}
+.yd-map-select select{outline:none;border:none;font-size:13px;background:transparent;text-align:center;height:20px;padding:0 20px;width:42%;box-sizing:border-box;appearance:none;-moz-appearance:none;-webkit-appearance:none;background:url("../image/down.png") no-repeat scroll 80% center transparent;padding-right:14px}
+.yd-church-list>div:first-child{font-size:16px;color:#333333;height:40px;line-height:40px}
+.yd-map-select select:first-child{border-right:1px solid #eeeeee}
+.yd-church-list i{margin-right:20px;height:20px;position:relative;top:5px;line-height:40px}
+.yd-church-list>div:last-child{padding-left:35px;color:#999999;font-size:12px}
+.yd-map-con>div:last-child{border-bottom:0}
+.yd-cn-church{margin-bottom:50px}
+.yd-church-title{display:flex;justify-content:space-between;border-bottom:1px solid #eeeeee;width:1200px;height:60px;line-height:60px;margin-bottom:50px}
+.yd-church-title .yd-title{height:60px;line-height:60px}
+.yd-church-title .yd-more{float:right}
+.yd-title{font-size:20px;color:#494949;height:40px;line-height:40px;display:inline-block}
+.yd-church-item{width:33.3%;height:355px;overflow:hidden;font-size:12px;color:#999999;float:left}
+.yd-church-img{width:355px;height:200px;overflow:hidden;margin-bottom:35px}
+.yd-church-img img{width:100%;height:100%}
+.yd-church-name{font-size:16px;color:#494949}
+.yd-church-address{margin:10px 0;display:flex;align-items:center}
+.yd-church-address i{display:flex;align-items:center;margin-right:10px}
+.yd-church-text{line-height:25px;height:50PX;width:85%;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.yd-church-group{display:flex;flex-wrap:wrap;width:1270px;overflow:hidden}
+.yd-main{flex-wrap:wrap}
+.yd-maga-list{margin-top:-30px;width:100%;display:flex;float:right;justify-content:flex-end}
+.yd-maga-list .yd-map-input{margin:0;float:right}
+.yd-book{}
+.yd-book-left{overflow:hidden;width:1200px;display:block}
+.yd-book-title{display:flex;border-bottom:1px solid #f0f0f0;justify-content:space-between}
+.yd-book-con{display:flex;width:1200px;margin-top:40px;flex-wrap:wrap}
+.yd-book-item{width:160px;display:flex;margin-right:48px;flex-direction:column;align-items:center;position:relative;font-size:15px;margin-bottom:50px;float:left;text-align:center}
+.yd-book-item:nth-child(6n){margin-right:0}
+.yd-book-img{width:150px;height:210px;overflow:hidden;margin-bottom:20px;box-shadow:1px 1px 30px #eaeaea}
+.yd-book-img img{width:100%;height:100%}
+.yd-book-item>div:nth-child(2){color:#494949;width:100%;text-align:left;font-size:14px}
+.yd-book-item>div:nth-child(3){text-align:left;font-size:12px;width:100%;color:#999;margin-top:10px}
+.yd-book-mask{position:absolute;width:150px;height:210px;top:0;left:0;display:none;background:rgba(51,51,51,0.4)}
+.yd-book-read{position:absolute;width:85px;height:30px;left:35px;top:90px;border-radius:20px;background:#f78311;color:#ffffff;font-size:13px;line-height:30px;text-align:center;display:none;cursor:pointer}
