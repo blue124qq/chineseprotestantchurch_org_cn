@@ -16,7 +16,7 @@
     <script src="common/js/jquery.PrintArea.js"></script>
     <script src="common/js/html5media.min.js"></script>
     <script type="text/javascript" src="common/js/jquery.easing.js"></script>
-    <script type="text/javascript" src="/kb.js"></script>
+    
     <link rel="stylesheet" href="home/cn/css/index.css">
 <style>
 	body{
@@ -962,62 +962,4 @@ for (var i = 0; i < $("#textify p").length; i++) { //循环每个<p>标签，获
         Relative_len = $("#textify p")[i].scrollHeight; 
         group_no++;
         $("#textify p")[i].className  = "pagegroup_" + group_no; 
-    } else {
-        Relative_len = $("#textify p")[i].scrollHeight + Relative_len;
-        $("#textify p")[i].className  = "pagegroup_" + group_no;
     }
-}
-if (group_no > 1) {
-    $("#textify p").hide();
-    $("#textify p.pagegroup_1").show();
-    var current = 1;
-    var previous = 1, next = 2, pageIndex = 1;
-    var html = '<ul><li class="prev dis"  data-id=' + previous + ' id="page_previous">上一页</li>';
-    for (var i = 1; i <= group_no; i++) {
-        if (i == 1) {
-            html += "<li class='currentp'  id='page" + i + "' data-id=" + i + " >"+ i +'</li>';
-        } else {
-            html += "<li class='' id='page" + i + "' data-id=" + i + " > "+ i +'</li>';
-        }
-    }
-    html += '<li class="next" data-id=' + next + ' id="page_next">下一页</li>';
-
-    html += " <li class='all'>阅读全文</li> ";
-    html += " </ul>";
-    $("#yd-page").html(html);
-}
-
-$("#yd-page li").click(function() {
-    pageIndex = $(this).attr("data-id");
-    if (pageIndex) {
-        if(!$(this).hasClass('dis') && !$(this).hasClass('currentp')){
-            var sc=$(window).scrollTop();
-            $('body,html').animate({scrollTop:0},1);
-        }
-        current = pageIndex;
-        $(".currentp").attr("class", "");
-        $("#page" + pageIndex).attr("class", "currentp");
-        $("#textify p").hide();
-        $("#textify p.pagegroup_"+ pageIndex).show();
-        if (current > 1) {
-            previous = parseInt(current) - parseInt(1);
-            $("#page_previous").attr("data-id", previous).removeClass('dis');
-        } else {
-            previous = 1;
-            $("#page_previous").attr("data-id", previous).addClass('dis');
-        }
-
-        if (current < group_no) {
-            next = parseInt(current) + parseInt(1);
-            $("#page_next").attr("data-id", next).removeClass('dis');
-        } else {
-            next = group_no;
-            $("#page_next").attr("data-id", next).addClass('dis');
-        }
-    } else {
-        $("#textify p").show();
-        $("#yd-page").hide();
-    }
-})
-</script>
-
